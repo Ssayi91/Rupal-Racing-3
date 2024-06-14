@@ -109,7 +109,7 @@ header.shadow{
 #search-icon{
     font-size: 30px;
     cursor: pointer;
-    color: var(--bg-color);
+    color: var(--text-color);
 }
 #search-icon:hover{
     cursor: pointer;
@@ -142,19 +142,20 @@ header.shadow{
 }
 /*Home*/
 .home{
-    max-width: 1300px;
+    max-width: 1024px;
     margin: auto;
     width: 100%;
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url(./Assets/cover.png);
+    background: url(./Assets/SG0.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
+    background-size: contain;
+    background-position:right center;
 }
+
 .home-text{
-    padding-left: 130px;
+    padding-left: 30px;
 }
 .home-text h1{
     font-size: 36px;
@@ -165,8 +166,13 @@ header.shadow{
 }
 .home-text p{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 800;
     margin: 8px 0 16px;
+    color: var(--bg-color);
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px 40px 40px 40px;
 }
 .btn{
     padding: 10px 22px;
@@ -415,6 +421,8 @@ header.shadow{
     font-size: 22px;
 }
 .copyright{
+    font-size: 25px;
+    font-weight: 600;
     padding: 10px;
     text-align: center;
 }
